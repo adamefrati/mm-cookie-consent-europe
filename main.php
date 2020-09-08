@@ -8,14 +8,14 @@
  * that starts the plugin.
  *
  * @link              https://myyntimaatio.fi
- * @since             1.0.3
+ * @since             1.0.4.1
  * @package           Cookie Consent Europe
  *
  * @wordpress-plugin
  * Plugin Name:       COOKIE CONSENT - Myyntimaatio
  * Plugin URI:        https://myyntimaatio.fi
  * Description:       Adds a cookie notice and a privacy notice.
- * Version:           1.0.4
+ * Version:           1.0.4.1
  * Author:            Myyntimaatio
  * Author URI:        https://myyntimaatio.fi
  * License:           GPL-2.0+

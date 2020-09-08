@@ -41,6 +41,9 @@ So that I can answer here.
 
 == Changelog ==
 
+= 1.0.4.1 =
+* Small tweaks.
+
 = 1.0.4 =
 * Main cookie text's ability to translate from Polylang is fixed.
 * Added plugin icon.
