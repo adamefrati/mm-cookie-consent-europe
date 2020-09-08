@@ -7,7 +7,7 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://linkedin.com/in/shayanabbas
+ * @link              https://myyntimaatio.fi
  * @since             1.0.3
  * @package           Cookie Consent Europe
  *
@@ -15,9 +15,9 @@
  * Plugin Name:       COOKIE CONSENT - Myyntimaatio
  * Plugin URI:        https://myyntimaatio.fi
  * Description:       Adds a cookie notice and a privacy notice.
- * Version:           1.0.3
- * Author:            Shayan Abbas
- * Author URI:        https://linkedin.com/in/shayanabbas
+ * Version:           1.0.4
+ * Author:            Myyntimaatio
+ * Author URI:        https://myyntimaatio.fi
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       mm-cookie-consent-europe
@@ -34,7 +34,7 @@ require_once plugin_basename( '/plugin-update-checker/plugin-update-checker.php'
 
 // Adding plugin autoupdate feature
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/shayanabbas/mm-cookie-consent-europe/',
+	'https://github.com/ripodi/mm-cookie-consent-europe/',
 	__FILE__,
 	'mm-cookie-consent-europe'
 );
@@ -65,7 +65,7 @@ add_action( 'admin_menu', 'mm_cce_register_script_backend' );
 function mm_cce_register_script_backend() {
 	wp_enqueue_style( 'wp-color-picker' );
 	wp_enqueue_script( 'wp-color-picker-alpha', plugins_url( 'assets/js/wp-color-picker-alpha.min.js', __FILE__ ), array( 'wp-color-picker' ) );
-	
+
 	wp_register_script( 'mm_cce_backend_js', plugins_url( 'assets/js/backend.js', __FILE__ ), array( 'jquery', 'wp-color-picker' ),  MM_CC_VERSION );
 	wp_enqueue_script( 'mm_cce_backend_js' );
 }
@@ -73,7 +73,7 @@ function mm_cce_register_script_backend() {
 add_action( 'wp_enqueue_scripts', 'mm_cce_register_script_frontend' );
 
 function mm_cce_register_script_frontend() {
-	
+
 	wp_register_script( 'mm_cce_frontend_js', plugins_url( 'assets/js/frontend.js', __FILE__ ), array( 'jquery' ),  MM_CC_VERSION );
 	wp_enqueue_script( 'mm_cce_frontend_js' );
 }

@@ -1,5 +1,5 @@
 # Cookie Consent Wordpress plugin
-Adds a cookie notice and a privacy notice. 
+Adds a cookie notice and a privacy notice.
 
 # Installation
 1. Upload `mm-cookie-consent-europe` to the `/wp-content/plugins/` directory OR
